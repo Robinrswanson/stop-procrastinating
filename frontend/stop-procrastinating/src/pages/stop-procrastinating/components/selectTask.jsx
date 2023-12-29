@@ -17,7 +17,7 @@ const SelectTask = ({onSetTask}) => {
   
     const fetchTodos = async () => {
       try {
-        const response = await axios.get('https://stop-procrastinating-backend.vercel.app/api/v1/tasks');
+        const response = await axios.get('https://stop-procrastinating-3wtssye19-weiceica.vercel.app/api/v1/tasks');
         console.log(response.data);
         const todos = response.data.event;
         setTodos(todos);
