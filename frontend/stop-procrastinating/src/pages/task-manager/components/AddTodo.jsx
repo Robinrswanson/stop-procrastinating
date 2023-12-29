@@ -17,7 +17,7 @@ function AddTodo({ onAddTodo }) {
         completed: false,
       };
       try {
-        const response = await axios.post('https://stop-procrastinating-backend-aznfdfqm0-robinrswanson.vercel.app//api/v1/tasks', newTodo);
+        const response = await axios.post('https://stop-procrastinating-backend.vercel.app/api/v1/tasks', newTodo);
         console.log(response.data.event); // Log the response data
         onAddTodo(response.data.event);
       } catch (error) {
