@@ -118,24 +118,24 @@ function TaskManager() {
   return (
     <div className='page'>
       <NavigationBar/>
-        <div className='container'>
-        <div className='todo-list'>
-          <AddTodo onAddTodo={handleAddTodo} />
-          <QueryTodo onQuery={handleQueryMode}/>
-          <TodoList
-            todos={todos}  
-            onToggleComplete={handleToggleComplete}
-            onEditTodo={handleEditTodo}
-            onDeleteTodo={handleDeleteTodo}
-            onToggleArchive={handleToggleArchive}
-            showArchive={false}
-            buttonArchive={true}
-            queryMode={query}
-            todo={selectedTodo} 
-            onUpdateTodo={handleUpdateTodo} 
-            onCancel={() => setSelectedTodo(null)}
-          />
-        </div>
+        <div className='todo-container'>
+          <div className='todo-list'>
+            <AddTodo onAddTodo={handleAddTodo} />
+            <QueryTodo onQuery={handleQueryMode}/>
+            <TodoList
+              todos={todos}  
+              onToggleComplete={handleToggleComplete}
+              onEditTodo={handleEditTodo}
+              onDeleteTodo={handleDeleteTodo}
+              onToggleArchive={handleToggleArchive}
+              showArchive={false}
+              buttonArchive={true}
+              queryMode={query}
+              todo={selectedTodo} 
+              onUpdateTodo={handleUpdateTodo} 
+              onCancel={() => setSelectedTodo(null)}
+            />
+          </div>
         </div>
     </div>
   );
