@@ -25,7 +25,7 @@ To run the project locally, follow these steps:
 1. Clone the repository:
    
    ```bash
-   git clone https://github.com/weiceica/stop-procrastinating.git
+   git clone https://github.com/robinrswanson/stop-procrastinating.git
    ```
 
 2. Install Dependencies:
